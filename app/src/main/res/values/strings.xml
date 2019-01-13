@@ -175,6 +175,83 @@
 
         \n\n\nBasta sa lahat ng friends mo at kahit sa ‘di mo masyadong friend. May naisip ako. Puwede nating sabihin kay ma’am at sir na sa halip na magkontribusyon tayo para sa mga school projects, bakit hindi na lang tayo mag-ipon ng mga lumang papel. Halimbawa, pagkatapos ng pagsusulit, lahat ng mga scratch paper ay ipunin. Ang mga lumang diyaryo, ipunin. Mga lumang kalendaryo. Mga nagamit na test paper. Tapos, ibenta natin. Ang malilikom na pera, para sa school projects na! Hindi ba ang saya no’n? May pondo na para sa school projects, nakatutulong pa tayo sa kalikasan! Sana ay nakatulong sa inyo ang mga tips natin ngayon. At sana, matutunan din nating pangalagaan at protektahan ang ating mga puno. Mas todo ang saya kung maliban sa tipid papel movement natin, aba, magtanim na rin tayo ng puno! Go! Go! Go! Sago! ‘Yan ang batang Pinoy!</string>
 
-    <string name="basura_kid_title_3">Paano ang Tamang Pagtatapon ng Basura? Alamin!
-</string>
+    <string name="basura_kid_title_3">Paano ang Tamang Pagtatapon ng Basura? Alamin!</string>
+
+    <string name="idol_ko_si_kap_title_1">Makakalikasang Pamamaraan ng Pamamahala ng Basura</string>
+    <string name="idol_ko_si_kap_body_1">Ang pagamit ng mga makakalikasang pamamaraan at pag-iwas o pagbawas sa pagtatapon ng basura ay mainam sa pangangalaga ng kalusugan ng publiko at kalikasan. Ang pagpapatupad nito ay patuloy na nangangailangan ng pagpapalaganap ng naaayong hakbangin mula sa lokal na pamahalaan kasama ang partisipasyon ng pribadong sektor at ng mga mamamayan.
+
+        \n\n\nNgunit bilang isang simpleng mamamayan, anu-ano ang tungkulin ng pamahalaang lokal patungkol dito? sino-sino ang dapat magtulungan? at ano ang pananagutan ng lokal na pamahalaan sa publiko sa hindi pagsunod sa RA 9003?
+
+        \n\n\nHalina\'t alamin natin ang mga sagutan sa ating mga katanungan sa tulong ni Kap!</string>
+
+    <string name="idol_ko_si_kap_title_2">Ano ang Republic Act 9003?</string>
+    <string name="idol_ko_si_kap_body_2">Ang RA 9003 o mas kilala sa tawag na Ecological Solid Waste Management Act of 2000 ay batas tumutukoy sa tamang pagbubukod-bukod ng basura. Nais nitong maging responsable ang mga mamamayan sa pagpapanatili ng kalinisan at kalusugan ng bawat isa.</string>
+
+    <string name="idol_ko_si_kap_title_3">Ang mga adhikain ng Republic Act 9003:</string>
+    <string name="idol_ko_si_kap_body_3"><b>&#8226;</b>	Pangangalaga sa kalusugan ng publiko at kapaligiran;
+        \n\n<b>&#8226;</b>	Paggamit ng mga makakalikasang pamamaraan, pangangalaga ng likas-yaman;
+        \n\n<b>&#8226;</b>	Pag-iwas o pagbawas sa pagtatapon, gaya ng, pagkompost, regrecycle, pagbalik-gamit, pagbawi, proseso ng green charcoal, atbp., bago ang koleksyon, treatment at pagtapon;
+        \n\n<b>&#8226;</b>	Maayos na paghiwa-hiwalay, koleksyon, pagbiyahe, pag-imbak, treatment at pagtapon ng basura – nang hindi gumagamit ng incineration o pagsusunog;
+        \n\n<b>&#8226;</b>	Pananaliksik at pagpapaunlad;
+        \n\n<b>&#8226;</b>	Partisipasyon ng pribadong sector;
+        \n\n<b>&#8226;</b>	Pagpapanatili sa pangunahing pagpapatupad at ressponsibilidad ng pamahalaang local, sa pakikipagtulungan ng pamahalaang pambansa, ibang pamahalaang local, NGOs at pribadong sector;
+        \n\n<b>&#8226;</b>	Pagtutulungan at pansariling regulasyon ng mga gumagawa ng basura;
+        \n\n<b>&#8226;</b>	Pampublikong partisipasyon;
+        \n\n<b>&#8226;</b>	Edukasyon.</string>
+
+
+    <string name="idol_ko_si_kap_title_4">Mga Ipinagbabawal at Parusa ng RA 9003:</string>
+    <string name="idol_ko_si_kap_body_4"><b>&#8226;</b>	Ang pagkalat, pagtapon at pagtambak sa pampublikong lugar, tulad ng kalsada, sidewalk, kanal, estero o parke, o pagpayag sa ganitong gawain ay may multa na P300-P1,000, o serbisyong pangkomunidad ng 1 hanggang 15 araw sa pamahalaang local kung saan ginawa ang paglabag o pareho.
+            \n\n<b>&#8226;</b>	Ang pagsasagawa o pagpapatakbo, pagkolekta o pagbiyahe ng mga kagamitan na may paglabag sa operasyong pangsanitasyon o mga permit alinsunod sa RA 9003 ay may kaparusahang serbisyong pangkomunidad ng 1 hanggang 15 araw sa pamahalaang local kung saan ginawa ang paglabag o multa na P300-P1,000, o pareho.
+            \n\n<b>&#8226;</b>	Ang pagsunog ng basua ay may muulta na nagkakahalaga ng P300 – P1,000, o serbisyong pangkomunidad ng 1 hanggang 15 araw sa pamahalaang local kung saan ginawa ang paglabag o pareho.
+            \n\n<b>&#8226;</b>	Ang pagpapakolekta o pagpayag sa pagkolekta ng hindi nahiwa-hiwalay na basura ay may multa na nagkakahalaga ng P1000-P3,000, o kulong ng 1 hanggang 15 araw sa pamahalaang local kung saan ginawa ang paglabag, o pareho.
+            \n\n<b>&#8226;</b>	Ang Iligal na pagtayo ng tirahan sa open dump at landfill ay may multa na nagkakahalaga ng P1000-P3,000, o kulong ng 15 hanggang 6 buwan sa pamahalaang local kung saan ginawa ang paglabag, o pareho.
+            \n\n<b>&#8226;</b>	Ang paghalo ng mga nahiwalay nang recyclable sa iba pang basura sa sasakyan o lalagyan na ginagamit sa pangungulekta ng basura, sa unang paglabag ay may multa na hindi baba sa P5,000 + 5-10% ng kabuuang kita niya sa nakaraang taon.</string>
+
+
+    <string name="idol_ko_si_kap_title_5">Ano ang tungkulin ng Barangay?</string>
+    <string name="idol_ko_si_kap_body_5">Simple lang ang konsepto at panuntunan ng RA 9003. Ito ay naayon sa sistema ng paghihiwalay, pagbubuklod pagbabalik-gamit, pagresiklo ng basura. Ang tagumpay ng programang EWM (ecological waste management) ay nakasalalay sa barangay at sambahayan.
+
+        \n\n\nAng mga sumusunod ay ang tungkulin ng lokal n pamahalaan sa pagtataguyod ng RA 9003 sa lipunan.
+
+        \n\n\n<b>&#8226;</b> Koleksyon ng basura (Sek. 17, [b] (iii), LGC);
+        \n\n<b>&#8226;</b>	Paghihiwalay at pagkolekta ng mga nabubulok, makokompost at pagbalik-gamit ng Basura (Sec. 10, RA 9003);
+        \n\n<b>&#8226;</b>	Pagtatayo ng Materials Recovery Facility;(Sec.32, RA-9003);
+        \n\n<b>&#8226;</b>	Pag-organisa ng Multi-purpose Environmental Cooperative O Asosasyon. (Sec.13, RA-9003).
+
+        \n\n\nTungkulin rin ng barangay ang pagbubukod, pagkolekta at pagbabalik-gamit ng mga basura ayon sa uri nito.</string>
+
+    <string name="idol_ko_si_kap_title_6">Sinu-sino nga ba ang mga magtutulungan?</string>
+    <string name="idol_ko_si_kap_body_6">Ang barangay ay inaasahang bumuo ng isang komite o Barangay Solid Waste Committee (BSMW) upang maipatupad ang mga tungkulin ng nito. Ang komite ay binubuo ng mga sumusunod:
+
+        \n\n\n<b>&#8226;</b> Chair - Barangay Captain
+        \n\n<b>&#8226;</b>	1 kagawad
+        \n\n<b>&#8226;</b>	SK Chair
+        \n\n<b>&#8226;</b>	Pangulo ng mga Home Owners Association
+        \n\n<b>&#8226;</b>	Punong-guro ng mga public/private schools
+        \n\n<b>&#8226;</b>	1 Pangulo ng PTA
+        \n\n<b>&#8226;</b>	1 kinatawan ng Religious organization
+        \n\n<b>&#8226;</b>	1 kinatawan ng mga negosyante
+        \n\n<b>&#8226;</b>	1 kinatawan ng mga pangkalikasang NGO
+        \n\n<b>&#8226;</b>	Pangulo ng samahan ng market vendors
+        \n\n<b>&#8226;</b>	1 kinatawan ng samahan ng junkshop owners
+
+        \n\n\nAng BSMW ay inaasahang gawin ang mga tungkulin sa barangay tulad ng:
+
+        \n\n\n<b>&#8226;</b> Pagbalangkas ng Solid Waste Management program ng Barangay;
+        \n\n<b>&#8226;</b>	Paghihiwalay at koleksyon ng nabubulok, nakokompost at pagbalik-gamit na basura
+        \n\n<b>&#8226;</b>	Pagtatayo ng Materials Recovery Facility
+        \n\n<b>&#8226;</b>	Paglalaan at paghahanap ng pondo;
+        \n\n<b>&#8226;</b>	Pagtatalaga ng core coordinators;
+        \n\n<b>&#8226;</b>	Pagsusumite ng buwanang report sa munisipyo;
+        \n\n<b>&#8226;</b>	Pag-organisa ng Multi-purpose Environment Cooperative O Association
+
+    </string>
+
+    <string name="idol_ko_si_kap_title_7">Pananagutan sa Publiko</string>
+    <string name="idol_ko_si_kap_body_7">Maaaring sampahan ng kasong kriminal, sibil at administratibo ng sinumang mamamayan ang:
+        \n\n\n<b>&#8226;</b> Sinumang lumalabag o di tumutupad sa mga probisyon ng RA 9003 at IRR;
+        \n\n<b>&#8226;</b>	DENR at iba pang ahensya ukol sa mga kautusan at patakarang di alinsunod sa RA 9003;
+        \n\n<b>&#8226;</b>	Sinumang opisyal ng pamahalaan na tahasan o labis na pagwalang bahala sa tungkulin ayon sa RA 9003; o pang-abuso sa awtoridad.
+        </string>
 </resources>

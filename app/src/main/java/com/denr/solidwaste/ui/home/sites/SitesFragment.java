@@ -11,6 +11,7 @@ import com.denr.solidwaste.base.BaseFragment;
 import com.denr.solidwaste.databinding.FragmentSitesBinding;
 import com.denr.solidwaste.ui.basurakid.BasuraKidActivity;
 import com.denr.solidwaste.ui.fantastik4.Fantastik4Activity;
+import com.denr.solidwaste.ui.idolkosikap.IdolKoSiKapActivity;
 import com.denr.solidwaste.ui.ra9003.Ra9003Activity;
 
 import javax.inject.Inject;
@@ -59,6 +60,9 @@ public class SitesFragment extends BaseFragment<FragmentSitesBinding, SitesFragm
                 break;
             case 2:
                 startActivity(new Intent(getActivity(), BasuraKidActivity.class));
+                break;
+            case 3:
+                startActivity(new Intent(getActivity(), IdolKoSiKapActivity.class));
                 break;
         }
     }

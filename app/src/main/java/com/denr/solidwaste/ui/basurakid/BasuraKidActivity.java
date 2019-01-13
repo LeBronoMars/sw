@@ -15,7 +15,7 @@ import com.denr.solidwaste.base.BaseActivity;
 import com.denr.solidwaste.base.Constant;
 import com.denr.solidwaste.databinding.ActivityBasuraKidBinding;
 import com.denr.solidwaste.ui.fantastik4.Fantastik4Activity;
-import com.denr.solidwaste.ui.ra9003.Ra9003Activity;
+import com.denr.solidwaste.ui.idolkosikap.IdolKoSiKapActivity;
 import com.denr.solidwaste.ui.welcome.WelcomeActivity;
 import com.synnapps.carouselview.CarouselView;
 
@@ -89,7 +89,8 @@ public class BasuraKidActivity extends BaseActivity<ActivityBasuraKidBinding, Ba
 
     @Override
     public void onViewNextSite() {
-        showToastMessage("On view Fantastic 4 screen here");
+        startActivity(new Intent(this, IdolKoSiKapActivity.class));
+        finish();
     }
 
     private void initCarouselView() {

@@ -7,6 +7,8 @@ import com.denr.solidwaste.ui.fantastik4.Fantastik4Module;
 import com.denr.solidwaste.ui.home.HomeActivity;
 import com.denr.solidwaste.ui.home.HomeFragmentProvider;
 import com.denr.solidwaste.ui.home.HomeModule;
+import com.denr.solidwaste.ui.idolkosikap.IdolKoSiKapActivity;
+import com.denr.solidwaste.ui.idolkosikap.IdolKoSiKapModule;
 import com.denr.solidwaste.ui.ra9003.Ra9003Activity;
 import com.denr.solidwaste.ui.ra9003.Ra9003Module;
 import com.denr.solidwaste.ui.welcome.WelcomeActivity;
@@ -43,4 +45,9 @@ public interface ActivityBuilderModule {
             BasuraKidModule.class,
         })
     BasuraKidActivity bindBasuraKidActivity();
+
+    @ContributesAndroidInjector(modules = {
+            IdolKoSiKapModule.class,
+        })
+    IdolKoSiKapActivity bindIdolKoSiKapActivity();
 }
