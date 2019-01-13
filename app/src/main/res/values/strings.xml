@@ -102,4 +102,9 @@
             \n\n<b>&#8226;</b>	Children (5 &amp; Under):
             \n\n<b>&#8226;</b>	Students:</string>
 
+    <string name="address">Address:</string>
+    <string name="telephone">Telephone:</string>
+    <string name="email">Email:</string>
+    <string name="follow_on_fb">Follow on Facebook</string>
+    <string name="follow_on_twitter">Follow on Twitter</string>
 </resources>
