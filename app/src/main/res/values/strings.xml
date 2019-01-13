@@ -23,6 +23,7 @@
     <string name="ra_9003_desc">Ang RA 9003 ay nagsasaad ng mga alintuntunin sa wastong pamamahala ng basura, pagpapalaganap ng kaalaman sa wastong paggamit ng likas-yaman at pagpapatupad ng mga programang nakatuon sa pakikiisa ng bawat mamamayan upang mabawasan ang basurang agad lamang tinatapon. Layunin din nito na maipaliwanag ang benepisyo ng pagkakaroon ng pasilidad sa bawat lugar na maaring pag imbakan ng balik-materyales o lugar para i-proseso ang mga ito.</string>
     <string name="play_video">Play Video</string>
     <string name="next_site">Next Site</string>
+    <string name="prev_site">Previous Site</string>
     <string name="ra_9003_content_title_1">Ano ang nilalaman ng RA 9003?</string>
     <string name="ra_9003_content_body_1"><b>&#8226;</b>Responsibilidad ng iba’t-ibang ahensiya ng pamahalaan lokal na gobyerno, komunidad kasama na rito ang mga NGO’s
                     \n\n<b>&#8226;</b>	Pagtatatag ng National Solid Waste Management Commission at ng National Ecology Center
@@ -118,4 +119,30 @@
     <string name="save">Save</string>
     <string name="thank_you">Thank You!</string>
     <string name="lorem_ipsum_dolor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string name="fantastic_4_title_1">Mensahe Mula Sa Ating Mga Bida</string>
+    <string name="fantastic_4_body_1">
+        \n<b>Avoidance:</b>
+
+        \n\nIwasan ang paglikha ng basura. Ugaliing gumamit ng mga bagay na gawa sa renewable resources at iwasan ang paggamit ng mga disposable na bagay tulad ng ballpen, diapern pang-ahit, at iba pa.
+
+        \n\n\n<b>Reduce:</b>
+
+        \n\nBawasan o paliitin ang dami ng mga bagay na hindi na maaaring gamitin o mapakinabangan pa.
+
+        \n\n\n<b>Reuse:</b>
+
+        \n\nAng paulit-ulit na paggamit ng isang bagay upang hindi ito masayang.
+
+        \n\n\n<b>Recycle:</b>
+
+        \n\nAng pagbalik-gamit mula sa isang produkto na ginagamit na upang makalikha ng isang bagay at muling mapakinabangan.
+
+        </string>
+
+    <string name="fantastic_4_title_2">Halina\'t samahan natin ang mga bida sa kanilang kwento!</string>
+    <string name="fantastic_4_body_2">\n\nSa simpleng paraan ng pagtatalaga ng mga pinagtatapunan ng nabubulok, \'di nabubulok at recyclable ay may malaking tulong tulong sa pananatili ng kalinisan ng ating kapaligiran.
+
+        \n\nKaya atin nang ugaliin ang tamang paghihiwalay ng basura o waste segregation at sundin ang bilin ng ating Fantastik4!</string>
+
 </resources>

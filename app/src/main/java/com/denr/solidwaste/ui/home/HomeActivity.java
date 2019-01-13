@@ -109,7 +109,7 @@ public class HomeActivity extends BaseActivity<ActivityHomeBinding, HomeViewMode
                 if (i == 0) {
                     getSupportActionBar().setTitle(getString(R.string.bnve_maps));
                 } else if (i == 1) {
-                    getSupportActionBar().setTitle(getString(R.string.bnve_keypad));
+                    getSupportActionBar().setTitle(getString(R.string.bnve_sites));
                 } else if (i == 2) {
                     getSupportActionBar().setTitle(getString(R.string.bnve_info));
                 }
@@ -120,5 +120,9 @@ public class HomeActivity extends BaseActivity<ActivityHomeBinding, HomeViewMode
 
             }
         });
+
+        getViewDataBinding().vpHome.setCurrentItem(1);
+        getViewDataBinding().bottomNavigationViewEx.setCurrentItem(1);
+        getSupportActionBar().setTitle(getString(R.string.bnve_sites));
     }
 }
