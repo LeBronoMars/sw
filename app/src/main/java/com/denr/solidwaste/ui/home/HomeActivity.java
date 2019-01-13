@@ -42,7 +42,7 @@ public class HomeActivity extends BaseActivity<ActivityHomeBinding, HomeViewMode
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initFragments();
-        getSupportActionBar().setTitle(getString(R.string.bnve_maps));
+        getSupportActionBar().setTitle(getString(R.string.bnve_sites));
     }
 
     @Override
@@ -123,6 +123,5 @@ public class HomeActivity extends BaseActivity<ActivityHomeBinding, HomeViewMode
 
         getViewDataBinding().vpHome.setCurrentItem(1);
         getViewDataBinding().bottomNavigationViewEx.setCurrentItem(1);
-        getSupportActionBar().setTitle(getString(R.string.bnve_sites));
     }
 }

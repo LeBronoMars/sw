@@ -39,6 +39,10 @@
         <activity
             android:name=".ui.fantastik4.Fantastik4Activity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.basurakid.BasuraKidActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

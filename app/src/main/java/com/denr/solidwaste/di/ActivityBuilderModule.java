@@ -1,5 +1,7 @@
 package com.denr.solidwaste.di;
 
+import com.denr.solidwaste.ui.basurakid.BasuraKidActivity;
+import com.denr.solidwaste.ui.basurakid.BasuraKidModule;
 import com.denr.solidwaste.ui.fantastik4.Fantastik4Activity;
 import com.denr.solidwaste.ui.fantastik4.Fantastik4Module;
 import com.denr.solidwaste.ui.home.HomeActivity;
@@ -36,4 +38,9 @@ public interface ActivityBuilderModule {
             Fantastik4Module.class,
         })
     Fantastik4Activity bindFantastik4Activity();
+
+    @ContributesAndroidInjector(modules = {
+            BasuraKidModule.class,
+        })
+    BasuraKidActivity bindBasuraKidActivity();
 }
