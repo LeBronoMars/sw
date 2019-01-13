@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">SolidWaste</string>
-    
+
     <string name="bnve_maps">Maps</string>
     <string name="bnve_keypad">Keypad</string>
     <string name="bnve_sites">Sites</string>
@@ -17,4 +17,71 @@
     <string name="site_list_menu_4">Idol ko si Kap!</string>
     <string name="site_list_menu_5">Fantastik4</string>
     <string name="site_list_menu_6">Composting</string>
+
+    <string name="ra_9003_title">Ano ang RA 9003?</string>
+    <string name="ra_9003_desc">Ang RA 9003 ay nagsasaad ng mga alintuntunin sa wastong pamamahala ng basura, pagpapalaganap ng kaalaman sa wastong paggamit ng likas-yaman at pagpapatupad ng mga programang nakatuon sa pakikiisa ng bawat mamamayan upang mabawasan ang basurang agad lamang tinatapon. Layunin din nito na maipaliwanag ang benepisyo ng pagkakaroon ng pasilidad sa bawat lugar na maaring pag imbakan ng balik-materyales o lugar para i-proseso ang mga ito.</string>
+    <string name="play_video">Play Video</string>
+    <string name="next_site">Next Site</string>
+    <string name="ra_9003_content_title_1">Ano ang nilalaman ng RA 9003?</string>
+    <string name="ra_9003_content_body_1"><b>&#8226;</b>Responsibilidad ng iba’t-ibang ahensiya ng pamahalaan lokal na gobyerno, komunidad kasama na rito ang mga NGO’s
+                    \n\n<b>&#8226;</b>	Pagtatatag ng National Solid Waste Management Commission at ng National Ecology Center
+                    \n\n<b>&#8226;</b> Pagpapatupad ng Mandatory Waste Diversion Goal
+                    \n\n<b>&#8226;</b> Pagtatatag ng Materials Recovery Facility
+                    \n\n<b>&#8226;</b> Pagsasaayos ng mga Tapunan ng Basura</string>
+
+    <string name="ra_9003_content_title_2">Ano ang mga ahensyang kasama sa pagpapatupad ng batas?</string>
+    <string name="ra_9003_content_body_2"><b>&#8226;</b>National Solid Waste Management Commission (NSWMC) na binubuo ng 14 na ahensya mula sa gobyerno at 3 naman mula sa pribadong sektor
+            \n\n<b>&#8226;</b>	Department of Environment and Natural Resources (DENR)
+            \n\n<b>&#8226;</b>	Lokal na Gobyerno (Siyudad at Munisipyo)
+            \n\n<b>&#8226;</b>	Department of Education
+            \n\n<b>&#8226;</b>	Commision on Higher Education
+            \n\n<b>&#8226;</b>	Office of the Press Secretary
+            \n\n<b>&#8226;</b>	Kapisanan ng mga Brodkaster ng Pilipinas
+            \n\n<b>&#8226;</b>	National Press Club
+            \n\n<b>&#8226;</b>	Philippines Press Institute
+            \n\n<b>&#8226;</b>	Philippines National Police
+            \n\n<b>&#8226;</b>	Department of National Defense
+            \n\n<b>&#8226;</b>	Philippines Coast Guard</string>
+
+    <string name="ra_9003_content_title_3">Ang mga bumubuo ng NSWMC</string>
+    <string name="ra_9003_content_body_3"><b>&#8226;</b>Department of Environment and Natural Resources
+            \n\n<b>&#8226;</b>	Philippine Information Agency
+            \n\n<b>&#8226;</b>	Department of Interior and Local Government
+            \n\n<b>&#8226;</b>	TESDA
+            \n\n<b>&#8226;</b>	Department of Science and Technology
+            \n\n<b>&#8226;</b>	Metro Manila Development Authority
+            \n\n<b>&#8226;</b>	Department of Public Works and Highways
+            \n\n<b>&#8226;</b>	Liga ng mga Probinsya
+            \n\n<b>&#8226;</b>	Department of Health
+            \n\n<b>&#8226;</b>	Liga ng mga Lungsod
+            \n\n<b>&#8226;</b>	Department of Trade and Industry
+            \n\n<b>&#8226;</b>	Liga ng mga Munisipyo
+            \n\n<b>&#8226;</b>	Department of Agriculture
+            \n\n<b>&#8226;</b>	Liga ng mga Barangay</string>
+
+    <string name="ra_9003_content_title_4">Ang RA 9003 ay may ipinapatupad na programa sa Recycling.</string>
+    <string name="ra_9003_content_body_4">Ang DENR ay nangagasiwa sa pagbibigay kaalaman at kaukulang pagsasanay sa mga lokal na gobyerno kasama na rito ang iba’t-ibang sangay ng institusyon. Ang ahensya ay gumagawa rin ng mga alituntunin upang maayos na maipatupad ng lokal na pamahalaan ang kanilang tungkulin sa pamayanan. Kung kinakailangan, ginagawad din nito ang mga karampatang parusa sa mga hindi tumutupad sa batas.</string>
+
+    <string name="ra_9003_content_title_5">Ilan sa ipanapatupad na programa:</string>
+    <string name="ra_9003_content_body_5"><b>&#8226;</b>	Pagbili ng mga produktong maaaring magamit muli o ma-recycle
+            \n\n<b>&#8226;</b>	Pagbabago sa proseso at mga materyales na ginagamit sa paggawa ng produkto
+            \n\n<b>&#8226;</b>	Eco-labeling
+            \n\n<b>&#8226;</b>	Pagkontrol sa pag-gamit maging ang pag-angkat ng mga produktong mahirap ma-recycle
+            \n\n<b>&#8226;</b>	Pagrekober ng mga mareresiklong gamit </string>
+
+    <string name="ra_9003_content_title_6">Ano ang Materials Recovery Facility (MRF)?</string>
+    <string name="ra_9003_content_body_6">Ang MRF ay ang pinaglalagakan ng mga nahakot na nabubulok o ma-karbon na parte ng basura upang gawing compost o pataba sa lupa. Dito pansamantalang nilalagay ang mga balikgamit o recyclables na materyales gaya ng papel, plastic, aluminum, maging mga gamit na gulong, atbp. Dito rin isinasagawa ang secondary sorting o ang pagbubukod ng mga materyales na nakolekta mula sa mga pinagmulan nito o sources.</string>
+
+    <string name="ra_9003_content_title_7">Ano ang kinakailangan sa pagpapatupad ngResource Recovery at Segregation?</string>
+    <string name="ra_9003_content_body_7"><b>&#8226;</b>	Magkakahiwalay na lalagyan para sa iba’t ibang uri ng basura compostables, recyclables, special wastes at residuals
+            \n\n<b>&#8226;</b>	Panatiliin ang naka-schedule na pagkolekta ng mga basura o materyales
+            \n\n<b>&#8226;</b>	Pagkakaroon ng bukod na pagsasalansan ng mga materyales
+            \n\n<b>&#8226;</b>	Paglalagay ng Materials Recovery Facility (MRF)
+            \n\n<b>&#8226;</b>	Alamin ang pagbebentahan o pagdadalhan ng mga balik gamit o recyclables at ng special waste kung meron man
+            \n\n<b>&#8226;</b>	Pakikipag-ugnayan sa mga kolektor ng natirang basura</string>
+
+    <string name="ra_9003_content_title_8">Pagpapatupad ng Batas sa mga Lokal na Pamahalaan</string>
+    <string name="ra_9003_content_body_8">Ang Provincial SWM Board ang nagsasaayos ng kabuuang programa sa Wastong pamamahala ng basura.
+    \n\n\nAng City/Municipal SWM Board naman ang nagpapatupad ng mga batas ukol sa pagbubukod ng basura sa pinagmulan nito, maging ang pagtatatagng mga pasilidad para sa natirang basura at mga special waste.
+    \n\n\nAng Barangay SWM Committee ay ang naatasan sa pagtatatag ng MRF para sa mga nabubulok o ma-karbon at pansamantalang lalagyan ng mga balik-gamit na materyales\n\n\n</string>
 </resources>

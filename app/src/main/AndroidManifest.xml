@@ -30,6 +30,10 @@
         <activity
             android:name=".ui.home.HomeActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.ra9003.Ra9003Activity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

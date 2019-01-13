@@ -1,5 +1,6 @@
 package com.denr.solidwaste.ui.home.sites;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.View;
@@ -8,6 +9,7 @@ import com.denr.solidwaste.BR;
 import com.denr.solidwaste.R;
 import com.denr.solidwaste.base.BaseFragment;
 import com.denr.solidwaste.databinding.FragmentSitesBinding;
+import com.denr.solidwaste.ui.ra9003.Ra9003Activity;
 
 import javax.inject.Inject;
 
@@ -46,6 +48,8 @@ public class SitesFragment extends BaseFragment<FragmentSitesBinding, SitesFragm
 
     @Override
     public void onSiteListAction(int index) {
-
+        if (index == 0) {
+            startActivity(new Intent(getActivity(), Ra9003Activity.class));
+        }
     }
 }
