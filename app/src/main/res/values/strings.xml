@@ -95,4 +95,11 @@
     <string name="become_a_member">Become a Member</string>
     <string name="blog">Blog</string>
 
+    <string name="tickets">Tickets</string>
+    <string name="ticket_details"><b>&#8226;</b>	Adults:
+            \n\n<b>&#8226;</b>	Seniors (60+):
+            \n\n<b>&#8226;</b>	Children (Ages 6-12):
+            \n\n<b>&#8226;</b>	Children (5 &amp; Under):
+            \n\n<b>&#8226;</b>	Students:</string>
+
 </resources>

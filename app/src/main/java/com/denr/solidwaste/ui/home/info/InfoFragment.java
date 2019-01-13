@@ -46,6 +46,8 @@ public class InfoFragment extends BaseFragment<FragmentInfoBinding, InfoFragment
 
     @Override
     public void onInfoAction(int index) {
-
+        if (index == 0) {
+            HoursAndAdmissionDialogFragment.newInstance().show(getFragmentManager(), "hours");
+        }
     }
 }

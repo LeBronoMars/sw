@@ -5,10 +5,11 @@
         android:icon="@drawable/ic_location_on_black_24dp"
         android:title="@string/bnve_maps" />
 
-    <item
-        android:id="@+id/navigation_keypad"
-        android:icon="@drawable/ic_apps_black_24dp"
-        android:title="@string/bnve_keypad" />
+    <!--<item-->
+        <!--android:id="@+id/navigation_keypad"-->
+        <!--android:icon="@drawable/ic_apps_black_24dp"-->
+        <!--android:title="@string/bnve_keypad" />-->
+    
     <item
         android:id="@+id/navigation_sites"
         android:icon="@drawable/ic_format_list_bulleted_black_24dp"
