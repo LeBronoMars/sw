@@ -5,4 +5,11 @@
     <string name="bnve_keypad">Keypad</string>
     <string name="bnve_sites">Sites</string>
     <string name="bnve_info">Info</string>
+
+    <string name="welcome_note">Welcome to ONE KALIKASAN CONNECT! A project of Environmental Management Bureau of DENR, that aims to protect, restore and enhance environmental quality towards good public health, environmental integrity and economic viability.</string>
+    <string name="welcome_video">Welcome Video</string>
+    <string name="about_this_app">About This App</string>
+    <string name="begin_tour">Begin Tour</string>
+
+
 </resources>
