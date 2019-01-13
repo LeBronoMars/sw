@@ -51,44 +51,54 @@ public class InfoFragment extends BaseFragment<FragmentInfoBinding, InfoFragment
 
     @Override
     public void onInfoAction(int index) {
-        if (index == 0) {
-            HoursAndAdmissionDialogFragment.newInstance().show(getChildFragmentManager(), "hours");
-        } else if (index == 1) {
-            ContactUsDialogFragment dialogFragment = ContactUsDialogFragment.newInstance();
-            dialogFragment.setOnContactUsListener(new OnContactUsListener() {
-                @Override
-                public void onViewAddress(String address) {
-                    final String map = "http://maps.google.co.in/maps?q=" + address;
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(map)));
-                }
-
-                @Override
-                public void onDial(String telephone) {
-                    Intent intent = new Intent(Intent.ACTION_DIAL);
-                    intent.setData(Uri.parse("tel:" + telephone));
-                    startActivity(intent);
-                }
-
-                @Override
-                public void onSendEmail(String email) {
-                    Intent intent = new Intent(Intent.ACTION_SEND);
-                    intent.setType("text/html");
-                    intent.putExtra(Intent.EXTRA_EMAIL, email);
-
-                    startActivity(Intent.createChooser(intent, "Send Email"));
-                }
-
-                @Override
-                public void onFollowOnFb() {
-                    ((BaseActivity) getActivity()).showToastMessage("Follow on facebook here");
-                }
-
-                @Override
-                public void onFollowOnTwitter() {
-                    ((BaseActivity) getActivity()).showToastMessage("Follow on twitter here");
-                }
-            });
-            dialogFragment.show(getChildFragmentManager(), "contact us");
+        switch (index) {
+            case 0:
+                HoursAndAdmissionDialogFragment.newInstance().show(getChildFragmentManager(), "hours");
+                break;
+            case 1:
+                showContactUsDialogFragment();
+                break;
+            case 2:
+                SurveyDialogFragment.newInstance().show(getChildFragmentManager(), "survey");
+                break;
         }
+    }
+
+    private void showContactUsDialogFragment() {
+        ContactUsDialogFragment dialogFragment = ContactUsDialogFragment.newInstance();
+        dialogFragment.setOnContactUsListener(new OnContactUsListener() {
+            @Override
+            public void onViewAddress(String address) {
+                final String map = "http://maps.google.co.in/maps?q=" + address;
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(map)));
+            }
+
+            @Override
+            public void onDial(String telephone) {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + telephone));
+                startActivity(intent);
+            }
+
+            @Override
+            public void onSendEmail(String email) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/html");
+                intent.putExtra(Intent.EXTRA_EMAIL, email);
+
+                startActivity(Intent.createChooser(intent, "Send Email"));
+            }
+
+            @Override
+            public void onFollowOnFb() {
+                ((BaseActivity) getActivity()).showToastMessage("Follow on facebook here");
+            }
+
+            @Override
+            public void onFollowOnTwitter() {
+                ((BaseActivity) getActivity()).showToastMessage("Follow on twitter here");
+            }
+        });
+        dialogFragment.show(getChildFragmentManager(), "contact us");
     }
 }

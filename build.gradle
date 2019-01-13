@@ -64,6 +64,7 @@ ext.versions = [
         rxjava2Version              : '2.1.12',
         rxLocation                  : '2.1@aar',
         rxandroidVersion            : '2.0.2',
+        segmentedControl            : '1.0.6',
         testRunner                  : '1.0.2',
         timber                      : '4.7.0',
 ]

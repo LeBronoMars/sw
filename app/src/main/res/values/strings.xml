@@ -107,4 +107,14 @@
     <string name="email">Email:</string>
     <string name="follow_on_fb">Follow on Facebook</string>
     <string name="follow_on_twitter">Follow on Twitter</string>
+
+    <string name="survey_question_1">What was the best part of your experience?</string>
+    <string name="survey_question_2">How can we improve your next visit?</string>
+    <string name="survey_question_3">Comments</string>
+    <string name="survey_question_4">May we contact you to follow up on your comments?</string>
+    <string name="survey_question_5">Email</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="save">Save</string>
+    <string name="thank_you">Thank You!</string>
 </resources>

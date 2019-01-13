@@ -98,4 +98,6 @@ dependencies {
     }
 
     implementation "com.github.ittianyu:BottomNavigationViewEx:$versions.bottomNav"
+
+    implementation "info.hoang8f:android-segmented:$versions.segmentedControl"
 }
