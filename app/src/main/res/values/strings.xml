@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SolidWaste</string>
+    
+    <string name="bnve_maps">Maps</string>
+    <string name="bnve_keypad">Keypad</string>
+    <string name="bnve_sites">Sites</string>
+    <string name="bnve_info">Info</string>
 </resources>
