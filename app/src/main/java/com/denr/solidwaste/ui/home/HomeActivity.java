@@ -111,8 +111,6 @@ public class HomeActivity extends BaseActivity<ActivityHomeBinding, HomeViewMode
                 } else if (i == 1) {
                     getSupportActionBar().setTitle(getString(R.string.bnve_keypad));
                 } else if (i == 2) {
-                    getSupportActionBar().setTitle(getString(R.string.bnve_sites));
-                } else {
                     getSupportActionBar().setTitle(getString(R.string.bnve_info));
                 }
             }

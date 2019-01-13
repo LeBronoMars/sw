@@ -53,13 +53,24 @@ public class InfoFragment extends BaseFragment<FragmentInfoBinding, InfoFragment
     public void onInfoAction(int index) {
         switch (index) {
             case 0:
-                HoursAndAdmissionDialogFragment.newInstance().show(getChildFragmentManager(), "hours");
+                HoursAndAdmissionDialogFragment.newInstance()
+                        .show(getChildFragmentManager(), "hours");
                 break;
             case 1:
                 showContactUsDialogFragment();
                 break;
             case 2:
                 SurveyDialogFragment.newInstance().show(getChildFragmentManager(), "survey");
+                break;
+            case 3:
+                BecomeAMemberHereDialogFragment.newInstance()
+                        .show(getChildFragmentManager(), "member");
+                break;
+            case 4:
+                BlogDialogFragment.newInstance().show(getChildFragmentManager(), "blog");
+                break;
+            case 5:
+                AboutThisAppDialogFragment.newInstance().show(getChildFragmentManager(), "about");
                 break;
         }
     }
