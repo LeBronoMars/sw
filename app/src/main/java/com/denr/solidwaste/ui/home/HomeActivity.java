@@ -12,6 +12,7 @@ import com.denr.solidwaste.R;
 import com.denr.solidwaste.base.BaseActivity;
 import com.denr.solidwaste.base.BaseFragmentPagerAdapter;
 import com.denr.solidwaste.databinding.ActivityHomeBinding;
+import com.denr.solidwaste.ui.home.info.InfoFragment;
 import com.denr.solidwaste.ui.home.maps.MapsFragment;
 import com.denr.solidwaste.ui.home.sites.SitesFragment;
 import com.denr.solidwaste.ui.welcome.WelcomeActivity;
@@ -87,8 +88,7 @@ public class HomeActivity extends BaseActivity<ActivityHomeBinding, HomeViewMode
     private void initFragments() {
         fragments.add(MapsFragment.newInstance());
         fragments.add(SitesFragment.newInstance());
-        fragments.add(SitesFragment.newInstance());
-        fragments.add(SitesFragment.newInstance());
+        fragments.add(InfoFragment.newInstance());
 
         pagerAdapter = new BaseFragmentPagerAdapter(getSupportFragmentManager(), fragments);
 

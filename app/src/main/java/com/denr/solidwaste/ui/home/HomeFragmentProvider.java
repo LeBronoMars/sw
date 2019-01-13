@@ -2,6 +2,8 @@ package com.denr.solidwaste.ui.home;
 
 import com.denr.solidwaste.ui.home.fragment.HomeFragment;
 import com.denr.solidwaste.ui.home.fragment.HomeFragmentModule;
+import com.denr.solidwaste.ui.home.info.InfoFragment;
+import com.denr.solidwaste.ui.home.info.InfoFragmentModule;
 import com.denr.solidwaste.ui.home.maps.MapsFragment;
 import com.denr.solidwaste.ui.home.maps.MapsFragmentModule;
 import com.denr.solidwaste.ui.home.sites.SitesFragment;
@@ -21,4 +23,7 @@ public interface HomeFragmentProvider {
 
     @ContributesAndroidInjector(modules = SitesFragmentModule.class)
     SitesFragment provideSitesFragment();
+
+    @ContributesAndroidInjector(modules = InfoFragmentModule.class)
+    InfoFragment provideInfoFragment();
 }

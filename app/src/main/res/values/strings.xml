@@ -89,4 +89,10 @@
     <string name="first_floor_map">First Floor Map</string>
     <string name="second_floor_map">Second Floor Map</string>
 
+    <string name="hours_and_admission">Hours and Admission</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="survey">Survey</string>
+    <string name="become_a_member">Become a Member</string>
+    <string name="blog">Blog</string>
+
 </resources>
