@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.denr.solidwaste.ui.home.sites.SitesFragmentViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                imageUrl="@{viewModel.getSiteImageUrl()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/welcome_bg_with_radius"
+                    android:onClick="@{() -> viewModel.onSiteListAction(0)}"
+                    android:text="@string/site_list_menu_1"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/welcome_bg_with_radius"
+                    android:onClick="@{() -> viewModel.onSiteListAction(1)}"
+                    android:text="@string/site_list_menu_2"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/welcome_bg_with_radius"
+                    android:onClick="@{() -> viewModel.onSiteListAction(2)}"
+                    android:text="@string/site_list_menu_3"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/welcome_bg_with_radius"
+                    android:onClick="@{() -> viewModel.onSiteListAction(3)}"
+                    android:text="@string/site_list_menu_4"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/welcome_bg_with_radius"
+                    android:onClick="@{() -> viewModel.onSiteListAction(4)}"
+                    android:text="@string/site_list_menu_5"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/welcome_bg_with_radius"
+                    android:onClick="@{() -> viewModel.onSiteListAction(5)}"
+                    android:text="@string/site_list_menu_6"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

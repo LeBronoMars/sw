@@ -44,6 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@drawable/welcome_bg_with_radius"
+            android:onClick="@{() -> viewModel.onBeginTour()}"
             android:text="@string/begin_tour"
             android:textColor="@color/white" />
 

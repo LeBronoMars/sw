@@ -6,7 +6,12 @@ import android.support.v4.app.Fragment;
 import com.denr.solidwaste.BR;
 import com.denr.solidwaste.R;
 import com.denr.solidwaste.base.BaseActivity;
+import com.denr.solidwaste.base.BaseFragmentPagerAdapter;
 import com.denr.solidwaste.databinding.ActivityHomeBinding;
+import com.denr.solidwaste.ui.home.fragment.HomeFragment;
+import com.denr.solidwaste.ui.home.sites.SitesFragment;
+
+import java.util.ArrayList;
 
 import javax.inject.Inject;
 
@@ -18,12 +23,19 @@ public class HomeActivity extends BaseActivity<ActivityHomeBinding, HomeViewMode
         implements HomeNavigator, HasSupportFragmentInjector {
 
     @Inject
+    HomeViewModel homeViewModel;
+
+    @Inject
     DispatchingAndroidInjector<Fragment> fragmentDispatchingAndroidInjector;
+
+    private BaseFragmentPagerAdapter pagerAdapter;
+
+    private ArrayList<Fragment> fragments = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        initFragments();
     }
 
     @Override
@@ -43,6 +55,21 @@ public class HomeActivity extends BaseActivity<ActivityHomeBinding, HomeViewMode
 
     @Override
     public HomeViewModel getViewModel() {
-        return null;
+        return homeViewModel;
+    }
+
+    private void initFragments() {
+        fragments.add(SitesFragment.newInstance());
+        fragments.add(SitesFragment.newInstance());
+        fragments.add(SitesFragment.newInstance());
+        fragments.add(SitesFragment.newInstance());
+
+        pagerAdapter = new BaseFragmentPagerAdapter(getSupportFragmentManager(), fragments);
+
+        getViewDataBinding().vpHome.setAdapter(pagerAdapter);
+
+        getViewDataBinding().vpHome.setOffscreenPageLimit(fragments.size());
+
+        getViewDataBinding().bottomNavigationViewEx.setupWithViewPager(getViewDataBinding().vpHome);
     }
 }

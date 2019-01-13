@@ -68,6 +68,8 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimary));
         }
+
+        mViewModel.setNavigator(this);
     }
 
     public T getViewDataBinding() {

@@ -2,7 +2,7 @@ package com.denr.solidwaste.di;
 
 import com.denr.solidwaste.ui.home.HomeActivity;
 import com.denr.solidwaste.ui.home.HomeModule;
-import com.denr.solidwaste.ui.home.fragment.HomeFragmentProvider;
+import com.denr.solidwaste.ui.home.HomeFragmentProvider;
 import com.denr.solidwaste.ui.welcome.WelcomeActivity;
 import com.denr.solidwaste.ui.welcome.WelcomeModule;
 

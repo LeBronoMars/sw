@@ -52,4 +52,8 @@ public class WelcomeViewModel extends BaseViewModel<WelcomeNavigator> {
     public void onShowPinterest() {
         getNavigator().onShowPinterest();
     }
+
+    public void onBeginTour() {
+        getNavigator().onBeginTour();
+    }
 }

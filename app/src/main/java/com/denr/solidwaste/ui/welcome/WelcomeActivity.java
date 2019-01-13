@@ -1,16 +1,16 @@
 package com.denr.solidwaste.ui.welcome;
 
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.media.MediaPlayer;
-import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
 import android.view.animation.DecelerateInterpolator;
 
 import com.denr.solidwaste.BR;
 import com.denr.solidwaste.R;
 import com.denr.solidwaste.base.BaseActivity;
 import com.denr.solidwaste.databinding.ActivityWelcomeBinding;
+import com.denr.solidwaste.ui.home.HomeActivity;
 
 import javax.inject.Inject;
 
@@ -21,13 +21,6 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
     WelcomeViewModel welcomeViewModel;
 
     private MediaPlayer mediaPlayer;
-
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        getViewModel().setNavigator(this);
-    }
 
     @Override
     public int getBindingVariable() {
@@ -111,5 +104,10 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
     @Override
     public void onShowPinterest() {
         showToastMessage("Show pinterest here");
+    }
+
+    @Override
+    public void onBeginTour() {
+        startActivity(new Intent(this, HomeActivity.class));
     }
 }

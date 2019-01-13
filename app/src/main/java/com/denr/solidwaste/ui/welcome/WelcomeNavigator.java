@@ -2,6 +2,8 @@ package com.denr.solidwaste.ui.welcome;
 
 public interface WelcomeNavigator {
 
+    void onBeginTour();
+
     void onToggleAudio(boolean playAudio);
 
     void onShowFacebook();

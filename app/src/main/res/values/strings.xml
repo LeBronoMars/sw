@@ -11,5 +11,10 @@
     <string name="about_this_app">About This App</string>
     <string name="begin_tour">Begin Tour</string>
 
-
+    <string name="site_list_menu_1">Ecological Solid Waste Management Act (RA 9003)</string>
+    <string name="site_list_menu_2">Fantastik4</string>
+    <string name="site_list_menu_3">BASURA KiD</string>
+    <string name="site_list_menu_4">Idol ko si Kap!</string>
+    <string name="site_list_menu_5">Fantastik4</string>
+    <string name="site_list_menu_6">Composting</string>
 </resources>
