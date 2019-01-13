@@ -34,6 +34,22 @@ public class WelcomeViewModel extends BaseViewModel<WelcomeNavigator> {
     }
 
     public void displayAudioDuration(int current, int duration) {
-        this.duration.set(String.format("00:%s / 00:%s", current, duration));
+        this.duration.set(String.format("00:%01d / 00:%s", current, duration));
+    }
+
+    public void onShowFacebook() {
+        getNavigator().onShowFacebook();
+    }
+
+    public void onShowTwitter() {
+        getNavigator().onShowTwitter();
+    }
+
+    public void onShowEmail() {
+        getNavigator().onShowEmail();
+    }
+
+    public void onShowPinterest() {
+        getNavigator().onShowPinterest();
     }
 }

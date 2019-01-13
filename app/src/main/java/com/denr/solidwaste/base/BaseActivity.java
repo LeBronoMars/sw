@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -63,6 +64,10 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
         performDependencyInjection();
         super.onCreate(savedInstanceState);
         performDataBinding();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimary));
+        }
     }
 
     public T getViewDataBinding() {

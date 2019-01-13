@@ -92,4 +92,24 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
             }
         }
     }
+
+    @Override
+    public void onShowFacebook() {
+        showToastMessage("Show facebook here");
+    }
+
+    @Override
+    public void onShowTwitter() {
+        showToastMessage("Show twitter here");
+    }
+
+    @Override
+    public void onShowEmail() {
+        showToastMessage("Show email here");
+    }
+
+    @Override
+    public void onShowPinterest() {
+        showToastMessage("Show pinterest here");
+    }
 }
