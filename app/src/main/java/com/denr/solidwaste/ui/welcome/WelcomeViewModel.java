@@ -18,6 +18,11 @@ public class WelcomeViewModel extends BaseViewModel<WelcomeNavigator> {
 
     public void onToggleAudioPlay() {
         isAudioPlaying.set(!isAudioPlaying.get());
+        getNavigator().onToggleAudio(isAudioPlaying.get());
+    }
+
+    public void resetAudio() {
+        isAudioPlaying.set(false);
     }
 
     public ObservableBoolean getIsAudioPlaying() {
@@ -26,5 +31,9 @@ public class WelcomeViewModel extends BaseViewModel<WelcomeNavigator> {
 
     public ObservableField<String> getDuration() {
         return duration;
+    }
+
+    public void displayAudioDuration(int current, int duration) {
+        this.duration.set(String.format("00:%s / 00:%s", current, duration));
     }
 }

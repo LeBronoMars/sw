@@ -1,7 +1,11 @@
 package com.denr.solidwaste.ui.welcome;
 
+import android.animation.ObjectAnimator;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.view.animation.DecelerateInterpolator;
 
 import com.denr.solidwaste.BR;
 import com.denr.solidwaste.R;
@@ -16,10 +20,13 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
     @Inject
     WelcomeViewModel welcomeViewModel;
 
+    private MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        getViewModel().setNavigator(this);
     }
 
     @Override
@@ -35,5 +42,54 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
     @Override
     public WelcomeViewModel getViewModel() {
         return welcomeViewModel;
+    }
+
+    @Override
+    public void onToggleAudio(boolean playAudio) {
+        if (null == mediaPlayer) {
+            mediaPlayer = MediaPlayer.create(this, R.raw.welcome_audio);
+
+            mediaPlayer.start();
+
+            final int duration = (mediaPlayer.getDuration() / 1000);
+
+            getViewModel().displayAudioDuration(0, duration);
+
+            getViewDataBinding().sbAudio.setMax(duration);
+
+            final Handler handler = new Handler();
+
+            runOnUiThread(new Runnable() {
+
+                @Override
+                public void run() {
+                    if (null != mediaPlayer) {
+                        int currentPos = mediaPlayer.getCurrentPosition() / 1000;
+
+                        getViewModel().displayAudioDuration(currentPos,
+                                (mediaPlayer.getDuration() / 1000));
+
+                        ObjectAnimator animation = ObjectAnimator
+                                .ofInt(getViewDataBinding().sbAudio, "progress", currentPos);
+                        animation.setDuration(500);
+                        animation.setInterpolator(new DecelerateInterpolator());
+                        animation.start();
+                    }
+                    handler.postDelayed(this, 1000);
+                }
+            });
+
+            mediaPlayer.setOnCompletionListener(mp -> {
+                mp.seekTo(0);
+                getViewModel().resetAudio();
+                getViewDataBinding().sbAudio.setProgress(0);
+            });
+        } else {
+            if (mediaPlayer.isPlaying()) {
+                mediaPlayer.pause();
+            } else {
+                mediaPlayer.start();
+            }
+        }
     }
 }
