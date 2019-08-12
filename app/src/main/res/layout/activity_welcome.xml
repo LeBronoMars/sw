@@ -20,8 +20,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:background="@color/welcome_button_bg"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/welcome_button_bg">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -29,12 +29,41 @@
                 android:src="@drawable/home_banner" />
         </RelativeLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/a_project_of"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_sw" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_denr" />
+
+        </LinearLayout>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:onClick="@{() -> viewModel.onShowWelcomeVideo()}"
             android:background="@drawable/welcome_bg_with_radius"
+            android:onClick="@{() -> viewModel.onShowWelcomeVideo()}"
             android:text="@string/welcome_video"
             android:textColor="@color/white" />
 

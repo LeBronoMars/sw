@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SolidWaste</string>
 
-    <string name="bnve_maps">Maps</string>
+    <string name="bnve_maps">PEC Web</string>
     <string name="bnve_keypad">Keypad</string>
     <string name="bnve_sites">Sites</string>
     <string name="bnve_info">Info</string>
@@ -254,4 +254,6 @@
         \n\n<b>&#8226;</b>	DENR at iba pang ahensya ukol sa mga kautusan at patakarang di alinsunod sa RA 9003;
         \n\n<b>&#8226;</b>	Sinumang opisyal ng pamahalaan na tahasan o labis na pagwalang bahala sa tungkulin ayon sa RA 9003; o pang-abuso sa awtoridad.
         </string>
+
+    <string name="a_project_of">A project of\nEnvironmental Management Bureau - DENR</string>
 </resources>

@@ -3,6 +3,7 @@ package com.denr.solidwaste.ui.home.maps;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.View;
+import android.webkit.WebView;
 
 import com.denr.solidwaste.BR;
 import com.denr.solidwaste.R;
@@ -27,6 +28,9 @@ public class MapsFragment extends BaseFragment<FragmentMapsBinding, MapsFragment
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        final WebView webView = view.findViewById(R.id.web_view);
+        webView.loadUrl("https://philippineenvironmentconnect.org/");
     }
 
     @Override
