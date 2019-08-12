@@ -11,6 +11,7 @@ import com.denr.solidwaste.R;
 import com.denr.solidwaste.base.BaseActivity;
 import com.denr.solidwaste.databinding.ActivityWelcomeBinding;
 import com.denr.solidwaste.ui.home.HomeActivity;
+import com.denr.solidwaste.ui.home.welcomevideo.WelcomeVideoDialogFragment;
 
 import javax.inject.Inject;
 
@@ -109,5 +110,11 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
     @Override
     public void onBeginTour() {
         startActivity(new Intent(this, HomeActivity.class));
+    }
+
+    @Override
+    public void onShowWelcomeVideo() {
+        WelcomeVideoDialogFragment fragment = WelcomeVideoDialogFragment.newInstance();
+        fragment.show(getSupportFragmentManager(), WelcomeVideoDialogFragment.TAG);
     }
 }

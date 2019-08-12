@@ -13,4 +13,6 @@ public interface WelcomeNavigator {
     void onShowEmail();
 
     void onShowPinterest();
+
+    void onShowWelcomeVideo();
 }
