@@ -106,8 +106,10 @@
     <string name="address_label">Address:</string>
     <string name="telephone_label">Tel/Fax Number:</string>
     <string name="email_label">Email:</string>
-    <string name="follow_on_fb">Follow on Facebook</string>
-    <string name="follow_on_twitter">Follow on Twitter</string>
+    <string name="follow_on_fb">Facebook</string>
+    <string name="follow_on_twitter">Twitter</string>
+    <string name="follow_on_youtube">Youtube</string>
+    <string name="follow_on_instagram">Instagram</string>
 
     <string name="survey_question_1">What was the best part of your experience?</string>
     <string name="survey_question_2">How can we improve your next visit?</string>

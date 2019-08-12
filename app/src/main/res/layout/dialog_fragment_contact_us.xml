@@ -125,6 +125,7 @@
             android:layout_marginTop="60dp"
             android:background="@drawable/welcome_bg_with_radius"
             android:gravity="center"
+            android:visibility="gone"
             android:orientation="horizontal">
 
             <ImageView
@@ -148,6 +149,7 @@
             android:id="@+id/ll_follow_on_twitter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:layout_marginTop="16dp"
             android:background="@drawable/welcome_bg_with_radius"
             android:gravity="center"

@@ -1,6 +1,8 @@
 package com.denr.solidwaste.ui.home.info;
 
 import android.app.Dialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
@@ -40,6 +42,18 @@ public class BlogDialogFragment extends DialogFragment {
 
         dialog = new Dialog(getActivity());
 
+        view.findViewById(R.id.ll_follow_on_fb).setOnClickListener(view ->
+                openUrlInBrowser("https://www.facebook.com/Philippine-Environment-Connect-687975338272466"));
+
+        view.findViewById(R.id.ll_follow_on_twitter).setOnClickListener(view ->
+                openUrlInBrowser("https://twitter.com/EMBPhilEnviron1"));
+
+        view.findViewById(R.id.ll_follow_on_youtube).setOnClickListener(view ->
+                openUrlInBrowser("https://www.youtube.com/channel/UCgqS6v6tWEnK-BEm8awfCgQ"));
+
+        view.findViewById(R.id.ll_follow_on_instagram).setOnClickListener(view ->
+                openUrlInBrowser("https://www.instagram.com/phil_environment_connect/"));
+
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(view);
         dialog.setCanceledOnTouchOutside(true);
@@ -47,5 +61,10 @@ public class BlogDialogFragment extends DialogFragment {
                 .LayoutParams.WRAP_CONTENT);
 
         return dialog;
+    }
+
+    private void openUrlInBrowser(String url) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(browserIntent);
     }
 }
