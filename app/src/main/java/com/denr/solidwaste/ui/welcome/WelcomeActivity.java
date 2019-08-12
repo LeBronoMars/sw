@@ -3,6 +3,7 @@ package com.denr.solidwaste.ui.welcome;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Handler;
 import android.view.animation.DecelerateInterpolator;
 
@@ -89,22 +90,22 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
 
     @Override
     public void onShowFacebook() {
-        showToastMessage("Show facebook here");
+        openUrlInBrowser("https://www.facebook.com/Philippine-Environment-Connect-687975338272466");
     }
 
     @Override
     public void onShowTwitter() {
-        showToastMessage("Show twitter here");
+        openUrlInBrowser("https://twitter.com/EMBPhilEnviron1");
     }
 
     @Override
-    public void onShowEmail() {
-        showToastMessage("Show email here");
+    public void onShowYoutube() {
+        openUrlInBrowser("https://www.youtube.com/channel/UCgqS6v6tWEnK-BEm8awfCgQ");
     }
 
     @Override
-    public void onShowPinterest() {
-        showToastMessage("Show pinterest here");
+    public void onShowInstagram() {
+        openUrlInBrowser("https://www.instagram.com/phil_environment_connect/");
     }
 
     @Override
@@ -116,5 +117,10 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
     public void onShowWelcomeVideo() {
         WelcomeVideoDialogFragment fragment = WelcomeVideoDialogFragment.newInstance();
         fragment.show(getSupportFragmentManager(), WelcomeVideoDialogFragment.TAG);
+    }
+
+    private void openUrlInBrowser(String url) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(browserIntent);
     }
 }

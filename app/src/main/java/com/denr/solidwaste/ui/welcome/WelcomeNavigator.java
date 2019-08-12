@@ -10,9 +10,9 @@ public interface WelcomeNavigator {
 
     void onShowTwitter();
 
-    void onShowEmail();
+    void onShowYoutube();
 
-    void onShowPinterest();
+    void onShowInstagram();
 
     void onShowWelcomeVideo();
 }

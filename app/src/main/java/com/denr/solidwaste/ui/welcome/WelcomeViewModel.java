@@ -45,12 +45,12 @@ public class WelcomeViewModel extends BaseViewModel<WelcomeNavigator> {
         getNavigator().onShowTwitter();
     }
 
-    public void onShowEmail() {
-        getNavigator().onShowEmail();
+    public void onShowYoutube() {
+        getNavigator().onShowYoutube();
     }
 
-    public void onShowPinterest() {
-        getNavigator().onShowPinterest();
+    public void onShowInstagram() {
+        getNavigator().onShowInstagram();
     }
 
     public void onBeginTour() {
