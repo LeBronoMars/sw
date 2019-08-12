@@ -1,9 +1,10 @@
-package com.denr.solidwaste.ui.basurakid;
+package com.denr.solidwaste.ui.composting;
 
 import android.content.Intent;
-import android.net.Uri;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -12,35 +13,26 @@ import com.bumptech.glide.request.RequestOptions;
 import com.denr.solidwaste.BR;
 import com.denr.solidwaste.R;
 import com.denr.solidwaste.base.BaseActivity;
-import com.denr.solidwaste.base.Constant;
-import com.denr.solidwaste.databinding.ActivityBasuraKidBinding;
-import com.denr.solidwaste.ui.fantastik4.Fantastik4Activity;
-import com.denr.solidwaste.ui.idolkosikap.IdolKoSiKapActivity;
-import com.denr.solidwaste.ui.ra9003.Ra9003Activity;
+import com.denr.solidwaste.databinding.ActivityCompostingBinding;
 import com.denr.solidwaste.ui.welcome.WelcomeActivity;
 import com.synnapps.carouselview.CarouselView;
 
 import javax.inject.Inject;
 
-public class BasuraKidActivity extends BaseActivity<ActivityBasuraKidBinding, BasuraKidViewModel>
-        implements BasuraKidNavigator {
+public class CompostingActivity extends BaseActivity<ActivityCompostingBinding,
+        CompostingViewModel> implements CompostingNavigator {
 
-    private static final int STORY_SIZE = 5;
+    private int[] drawableRes = new int[] {
+            R.drawable.composting_1,
+            R.drawable.composting_2,
+            R.drawable.composting_3,
+            R.drawable.composting_4,
+        };
+
+    private Drawable[] drawables = new Drawable[drawableRes.length];
 
     @Inject
-    BasuraKidViewModel basuraKidViewModel;
-
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle(getString(R.string.site_list_menu_3));
-
-        initCarouselView();
-
-        getViewDataBinding().videoView.setVideoURI(Uri.parse(Constant.BASURA_KID_VIDEO));
-        getViewDataBinding().videoView.start();
-    }
+    CompostingViewModel compostingViewModel;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -69,39 +61,45 @@ public class BasuraKidActivity extends BaseActivity<ActivityBasuraKidBinding, Ba
 
     @Override
     public int getLayoutId() {
-        return R.layout.activity_basura_kid;
+        return R.layout.activity_composting;
     }
 
     @Override
-    public BasuraKidViewModel getViewModel() {
-        return basuraKidViewModel;
-    }
-
-    @Override
-    public void onPlayVideo() {
-        showToastMessage("On Play video here");
+    public CompostingViewModel getViewModel() {
+        return compostingViewModel;
     }
 
     @Override
     public void onViewPrevSite() {
-        startActivity(new Intent(this, Ra9003Activity.class));
         finish();
     }
 
     @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        for (int i = 0; i < drawableRes.length; i++) {
+            drawables[i] = ContextCompat.getDrawable(this, drawableRes[i]);
+        }
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle(getString(R.string.site_list_menu_6));
+
+        initCarouselView();
+    }
+
+    @Override
     public void onViewNextSite() {
-        startActivity(new Intent(this, IdolKoSiKapActivity.class));
-        finish();
     }
 
     private void initCarouselView() {
         CarouselView carouselView = getViewDataBinding().carouselView;
 
-        carouselView.setPageCount(STORY_SIZE);
+        carouselView.setPageCount(drawableRes.length);
 
         carouselView.setImageListener((position, imageView) ->
                 Glide.with(this)
-                        .load(String.format("https://s3-ap-southeast-1.amazonaws.com/solid-waste/basura_kid_carousel_%d.jpg", (position + 1)))
+                        .load(drawables[position])
                         .apply(new RequestOptions().placeholder(R.color.placeholder))
                         .into(imageView));
     }

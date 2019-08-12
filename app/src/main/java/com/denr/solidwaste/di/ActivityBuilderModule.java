@@ -2,6 +2,8 @@ package com.denr.solidwaste.di;
 
 import com.denr.solidwaste.ui.basurakid.BasuraKidActivity;
 import com.denr.solidwaste.ui.basurakid.BasuraKidModule;
+import com.denr.solidwaste.ui.composting.CompostingActivity;
+import com.denr.solidwaste.ui.composting.CompostingModule;
 import com.denr.solidwaste.ui.fantastik4.Fantastik4Activity;
 import com.denr.solidwaste.ui.fantastik4.Fantastik4Module;
 import com.denr.solidwaste.ui.home.HomeActivity;
@@ -50,4 +52,9 @@ public interface ActivityBuilderModule {
             IdolKoSiKapModule.class,
         })
     IdolKoSiKapActivity bindIdolKoSiKapActivity();
+
+    @ContributesAndroidInjector(modules = {
+            CompostingModule.class,
+        })
+    CompostingActivity bindCompostingActivity();
 }

@@ -11,6 +11,7 @@ import com.denr.solidwaste.R;
 import com.denr.solidwaste.base.BaseActivity;
 import com.denr.solidwaste.databinding.ActivityIdolKoSiKapBinding;
 import com.denr.solidwaste.ui.basurakid.BasuraKidActivity;
+import com.denr.solidwaste.ui.fantastik4.Fantastik4Activity;
 import com.denr.solidwaste.ui.welcome.WelcomeActivity;
 
 import javax.inject.Inject;
@@ -71,6 +72,6 @@ public class IdolKoSiKapActivity extends BaseActivity<ActivityIdolKoSiKapBinding
 
     @Override
     public void onViewNextSite() {
-        showToastMessage("On view screen here");
+        startActivity(new Intent(this, Fantastik4Activity.class));
     }
 }

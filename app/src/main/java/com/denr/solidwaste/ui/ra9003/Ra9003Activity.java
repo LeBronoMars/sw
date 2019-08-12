@@ -10,7 +10,7 @@ import com.denr.solidwaste.BR;
 import com.denr.solidwaste.R;
 import com.denr.solidwaste.base.BaseActivity;
 import com.denr.solidwaste.databinding.ActivityRa9003Binding;
-import com.denr.solidwaste.ui.fantastik4.Fantastik4Activity;
+import com.denr.solidwaste.ui.basurakid.BasuraKidActivity;
 import com.denr.solidwaste.ui.welcome.WelcomeActivity;
 
 import javax.inject.Inject;
@@ -70,7 +70,7 @@ public class Ra9003Activity extends BaseActivity<ActivityRa9003Binding, Ra9003Vi
 
     @Override
     public void onViewNextSite() {
-        startActivity(new Intent(this, Fantastik4Activity.class));
+        startActivity(new Intent(this, BasuraKidActivity.class));
         finish();
     }
 }

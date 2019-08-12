@@ -255,6 +255,30 @@
         \n\n<b>&#8226;</b>	Sinumang opisyal ng pamahalaan na tahasan o labis na pagwalang bahala sa tungkulin ayon sa RA 9003; o pang-abuso sa awtoridad.
         </string>
 
+    <string name="composting_title_1">Ano ang Composting?</string>
+    <string name="composting_body_1">Ang composting ay isang proseso kung saan ang mga nabubulok na basura ay nirerecycle upang gawing fertilizer o pampataba ng mga halaman. Iyo ay isang natural na proseso ng kalikasan na nagaganap sa mga lugar na hindi sementado (tulad sa mga bakanteng lote, sakahan sa probinsya at sa kagubatan).
+        \n\nAng pagkompost ng mga nabubulok na basura ay ang wastong pamamaraan ng pagtatapon nito. Ang mga tirang pagkain ay maaaring ipakain sa mga alagang hayop (tulad ng pusa, aso o patabaing baboy) at ang mga hindi maipakain sa mga ito ay dapat na ikompost.
+        \n\nAng lupang gawa sa kompost ay masustansya at mainam para sa mga halaman. Hindi sakitin and mga halamang may masustansyang lupa/humus tulad ng kompost. Hindi rin ito nangangailangan ng pesticide at kemikal na fertilizer. Mahal din ang mga produktong ani rito o ang mga tinatawag na organic products.</string>
+
+    <string name="composting_title_2">Paano ba ang Composting</string>
+    <string name="composting_title_3">Ang mga sumusunod ay mga bagay na maaaring ikompost.</string>
+
+    <string name="composting_body_3">
+        \n\n<b>&#8226;</b> Tirang pagkain at panis na ulam
+        \n\n<b>&#8226;</b> Mga lamang loob ng isda, manok at baboy
+        \n\n<b>&#8226;</b> Pinagbalatan / Pinagtabasan ng gulay at prutas
+        \n\n<b>&#8226;</b> Sirang prutas
+        \n\n<b>&#8226;</b> Balat ng itlog
+        \n\n<b>&#8226;</b> Bag ng tsaa
+        \n\n<b>&#8226;</b> Basang papel/dyaryo/karton at tissue
+        \n\n<b>&#8226;</b> Toothpick na na gawa sa kawayan o kahoy
+        \n\n<b>&#8226;</b> Cotton buds na gawa sa papel ang tangkay
+        \n\n<b>&#8226;</b> Tinadtad na basura galing sa hardin
+    </string>
+
+    <string name="composting_title_4">Paalala:</string>
+    <string name="composting_body_4">Iwasan ilagay ang mga matagal mabulok tulad ng mga buto ng hayop, malalaking buto ng prutas, balat/shell ng tahong/talaba/tulya, at iba pa.</string>
+
     <string name="a_project_of">A project of\nEnvironmental Management Bureau - DENR</string>
 
     <string name="contact_us_header">NATIONAL SOLID WASTE MANAGEMENT COMMISSION / SECRETARIAT</string>

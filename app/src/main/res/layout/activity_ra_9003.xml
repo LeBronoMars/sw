@@ -58,6 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"
+                    android:visibility="gone"
                     android:background="@drawable/welcome_bg_with_radius"
                     android:onClick="@{() -> viewModel.onPlayVideo()}"
                     android:text="@string/play_video"

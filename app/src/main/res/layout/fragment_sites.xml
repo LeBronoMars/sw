@@ -46,15 +46,6 @@
                     android:layout_marginTop="16dp"
                     android:background="@drawable/welcome_bg_with_radius"
                     android:onClick="@{() -> viewModel.onSiteListAction(1)}"
-                    android:text="@string/site_list_menu_2"
-                    android:textColor="@color/white" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/welcome_bg_with_radius"
-                    android:onClick="@{() -> viewModel.onSiteListAction(2)}"
                     android:text="@string/site_list_menu_3"
                     android:textColor="@color/white" />
 
@@ -63,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@drawable/welcome_bg_with_radius"
-                    android:onClick="@{() -> viewModel.onSiteListAction(3)}"
+                    android:onClick="@{() -> viewModel.onSiteListAction(2)}"
                     android:text="@string/site_list_menu_4"
                     android:textColor="@color/white" />
 
@@ -72,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@drawable/welcome_bg_with_radius"
-                    android:onClick="@{() -> viewModel.onSiteListAction(4)}"
+                    android:onClick="@{() -> viewModel.onSiteListAction(3)}"
                     android:text="@string/site_list_menu_5"
                     android:textColor="@color/white" />
 
@@ -81,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@drawable/welcome_bg_with_radius"
-                    android:onClick="@{() -> viewModel.onSiteListAction(5)}"
+                    android:onClick="@{() -> viewModel.onSiteListAction(4)}"
                     android:text="@string/site_list_menu_6"
                     android:textColor="@color/white" />
 

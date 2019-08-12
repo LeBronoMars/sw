@@ -12,6 +12,8 @@ import com.denr.solidwaste.BR;
 import com.denr.solidwaste.R;
 import com.denr.solidwaste.base.BaseActivity;
 import com.denr.solidwaste.databinding.ActivityFantastik4Binding;
+import com.denr.solidwaste.ui.composting.CompostingActivity;
+import com.denr.solidwaste.ui.idolkosikap.IdolKoSiKapActivity;
 import com.denr.solidwaste.ui.ra9003.Ra9003Activity;
 import com.denr.solidwaste.ui.welcome.WelcomeActivity;
 import com.synnapps.carouselview.CarouselView;
@@ -77,13 +79,14 @@ public class Fantastik4Activity extends BaseActivity<ActivityFantastik4Binding, 
 
     @Override
     public void onViewPrevSite() {
-        startActivity(new Intent(this, Ra9003Activity.class));
+        startActivity(new Intent(this, IdolKoSiKapActivity.class));
         finish();
     }
 
     @Override
     public void onViewNextSite() {
-        showToastMessage("On view Fantastic 4 screen here");
+        startActivity(new Intent(this, CompostingActivity.class));
+        finish();
     }
 
     private void initCarouselView() {
