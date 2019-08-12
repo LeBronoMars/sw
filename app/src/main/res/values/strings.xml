@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SolidWaste</string>
+    <string name="app_name">PEConnect App</string>
 
     <string name="bnve_maps">PEC Web</string>
     <string name="bnve_keypad">Keypad</string>
@@ -93,7 +93,7 @@
     <string name="hours_and_admission">Hours and Admission</string>
     <string name="contact_us">Contact Us</string>
     <string name="survey">Survey</string>
-    <string name="become_a_member">Become a Member</string>
+    <string name="become_a_member">Join the WAR ON WASTE Movement</string>
     <string name="blog">Blog</string>
 
     <string name="tickets">Tickets</string>
@@ -103,9 +103,9 @@
             \n\n<b>&#8226;</b>	Children (5 &amp; Under):
             \n\n<b>&#8226;</b>	Students:</string>
 
-    <string name="address">Address:</string>
-    <string name="telephone">Telephone:</string>
-    <string name="email">Email:</string>
+    <string name="address_label">Address:</string>
+    <string name="telephone_label">Tel/Fax Number:</string>
+    <string name="email_label">Email:</string>
     <string name="follow_on_fb">Follow on Facebook</string>
     <string name="follow_on_twitter">Follow on Twitter</string>
 
@@ -256,4 +256,9 @@
         </string>
 
     <string name="a_project_of">A project of\nEnvironmental Management Bureau - DENR</string>
+
+    <string name="contact_us_header">NATIONAL SOLID WASTE MANAGEMENT COMMISSION / SECRETARIAT</string>
+    <string name="address">2nd Flr. HRF Bldg. NSWMC/S DENR Cmpd. Visayas Ave. Quezon City, Philippines – Zip Code 1100</string>
+    <string name="telephone">+63-2-9202252/63-2-9202279 (PDTSS-NEC)</string>
+    <string name="email">nswmc2004@yahoo.com/swmd@emb.gov.ph</string>
 </resources>

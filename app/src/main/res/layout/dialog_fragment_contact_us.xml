@@ -14,6 +14,23 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="@string/contact_us_header"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/darker_gray" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,17 +45,19 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/address"
+                android:layout_weight="3"
+                android:text="@string/address_label"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tv_address"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="Quick Street, Brown Fox, Lazy City"
+                android:layout_weight="7"
+                android:text="@string/address"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -53,17 +72,19 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/telephone"
+                android:layout_weight="3"
+                android:text="@string/telephone_label"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tv_telephone"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="(044) 1234567"
+                android:layout_weight="7"
+                android:text="@string/telephone"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -78,17 +99,19 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/email"
+                android:layout_weight="3"
+                android:text="@string/email_label"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tv_email"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="sample@gmail.com"
+                android:layout_weight="7"
+                android:text="@string/email"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -107,6 +130,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
+                android:clickable="false"
                 android:src="@drawable/ic_facebook" />
 
             <Button
@@ -114,6 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:background="@null"
+                android:clickable="false"
                 android:text="@string/follow_on_fb"
                 android:textColor="@color/white" />
 
@@ -131,6 +156,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
+                android:clickable="false"
                 android:src="@drawable/ic_twitter" />
 
             <Button
@@ -138,6 +164,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:background="@null"
+                android:clickable="false"
                 android:text="@string/follow_on_twitter"
                 android:textColor="@color/white" />
 

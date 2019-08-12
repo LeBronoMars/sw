@@ -63,8 +63,11 @@ public class InfoFragment extends BaseFragment<FragmentInfoBinding, InfoFragment
                 SurveyDialogFragment.newInstance().show(getChildFragmentManager(), "survey");
                 break;
             case 3:
-                BecomeAMemberHereDialogFragment.newInstance()
-                        .show(getChildFragmentManager(), "member");
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://philippineenvironmentconnect.org/about-us/"));
+                startActivity(browserIntent);
+//                BecomeAMemberHereDialogFragment.newInstance()
+//                        .show(getChildFragmentManager(), "member");
                 break;
             case 4:
                 BlogDialogFragment.newInstance().show(getChildFragmentManager(), "blog");
@@ -102,14 +105,19 @@ public class InfoFragment extends BaseFragment<FragmentInfoBinding, InfoFragment
 
             @Override
             public void onFollowOnFb() {
-                ((BaseActivity) getActivity()).showToastMessage("Follow on facebook here");
+                openUrlInBrowser("https://www.facebook.com/Philippine-Environment-Connect-687975338272466");
             }
 
             @Override
             public void onFollowOnTwitter() {
-                ((BaseActivity) getActivity()).showToastMessage("Follow on twitter here");
+                openUrlInBrowser("https://twitter.com/EMBPhilEnviron1");
             }
         });
         dialogFragment.show(getChildFragmentManager(), "contact us");
+    }
+
+    private void openUrlInBrowser(String url) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(browserIntent);
     }
 }
