@@ -102,4 +102,6 @@ dependencies {
     implementation "info.hoang8f:android-segmented:$versions.segmentedControl"
 
     implementation "com.synnapps:carouselview:$versions.carouselView"
+
+    implementation "com.pdfview:pdfview-android:$versions.pdfViewer"
 }

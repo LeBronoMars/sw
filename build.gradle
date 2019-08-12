@@ -57,6 +57,7 @@ ext.versions = [
         mockito                     : '2.18.0',
         mockWebServer               : '3.6.0',
         okHttpLogging               : '3.10.0',
+        pdfViewer                   : '1.0.0',
         retrofit                    : '2.4.0',
         retrofitRxJavaAdapter       : '2.4.0',
         robolectric                 : '3.8',

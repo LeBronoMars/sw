@@ -60,4 +60,8 @@ public class WelcomeViewModel extends BaseViewModel<WelcomeNavigator> {
     public void onShowWelcomeVideo() {
         getNavigator().onShowWelcomeVideo();
     }
+
+    public void onShowAppInfo() {
+        getNavigator().onShowAppInfo();
+    }
 }

@@ -15,4 +15,6 @@ public interface WelcomeNavigator {
     void onShowInstagram();
 
     void onShowWelcomeVideo();
+
+    void onShowAppInfo();
 }

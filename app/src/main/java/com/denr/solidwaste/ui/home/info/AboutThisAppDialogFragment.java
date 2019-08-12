@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import com.denr.solidwaste.R;
+import com.pdfview.PDFView;
 
 public class AboutThisAppDialogFragment extends DialogFragment {
 
@@ -40,11 +41,15 @@ public class AboutThisAppDialogFragment extends DialogFragment {
 
         dialog = new Dialog(getActivity());
 
+        final PDFView pdfView = view.findViewById(R.id.pdf_view);
+
+        pdfView.fromAsset("about_app.pdf").show();
+
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(view);
         dialog.setCanceledOnTouchOutside(true);
         dialog.getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout
-                .LayoutParams.WRAP_CONTENT);
+                .LayoutParams.MATCH_PARENT);
 
         return dialog;
     }

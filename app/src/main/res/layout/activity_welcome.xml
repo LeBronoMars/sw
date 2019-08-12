@@ -73,6 +73,7 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/welcome_bg_with_radius"
             android:text="@string/about_this_app"
+            android:onClick="@{() -> viewModel.onShowAppInfo()}"
             android:textColor="@color/white" />
 
         <Button

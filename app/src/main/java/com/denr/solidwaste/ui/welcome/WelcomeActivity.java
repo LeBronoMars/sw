@@ -12,6 +12,7 @@ import com.denr.solidwaste.R;
 import com.denr.solidwaste.base.BaseActivity;
 import com.denr.solidwaste.databinding.ActivityWelcomeBinding;
 import com.denr.solidwaste.ui.home.HomeActivity;
+import com.denr.solidwaste.ui.home.info.AboutThisAppDialogFragment;
 import com.denr.solidwaste.ui.home.welcomevideo.WelcomeVideoDialogFragment;
 
 import javax.inject.Inject;
@@ -122,5 +123,10 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
     private void openUrlInBrowser(String url) {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(browserIntent);
+    }
+
+    @Override
+    public void onShowAppInfo() {
+        AboutThisAppDialogFragment.newInstance().show(getSupportFragmentManager(), "about");
     }
 }
