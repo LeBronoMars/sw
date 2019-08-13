@@ -36,6 +36,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/welcome_bg_with_radius"
+                    android:visibility="gone"
                     android:onClick="@{() -> viewModel.onSiteListAction(0)}"
                     android:text="@string/site_list_menu_1"
                     android:textColor="@color/white" />
